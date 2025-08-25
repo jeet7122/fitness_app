@@ -4,14 +4,13 @@ import com.fitness.user_service.dto.RegisterRequest;
 import com.fitness.user_service.dto.UserResponse;
 import com.fitness.user_service.model.User;
 import com.fitness.user_service.repository.UserRepository;
-import jdk.jshell.spi.ExecutionControl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
 public class UserService {
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
     public UserResponse register(RegisterRequest registerRequest) {
         if(userRepository.existsByEmail(registerRequest.getEmail())) {
@@ -40,5 +39,9 @@ public class UserService {
         userResponse.setUpdatedAt(user.getUpdatedAt());
         userResponse.setUserId(userResponse.getUserId());
         return userResponse;
+    }
+
+    public Boolean existByUserID(String userId) {
+        return userRepository.existsById(userId);
     }
 }
