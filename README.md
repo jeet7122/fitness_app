@@ -20,6 +20,7 @@ All services register themselves with Eureka, and **RabbitMQ** is used for async
 
 ## ⚙️ Architecture
 
+```
           +----------------+
           |   Eureka       |
           |   Server       |
@@ -36,6 +37,7 @@ All services register themselves with Eureka, and **RabbitMQ** is used for async
      | <---------->+--------------+
      |
   [Authorization checks: ensure act
+```
 
 
 📡 Service Interactions
