@@ -12,7 +12,6 @@ import java.lang.annotation.Target;
 public class RegisterRequest {
     @NotBlank(message = "Email is required!")
     @Email(message = "Invalid Email Format!")
-
     private String email;
     @NotBlank(message = "Password is required")
     @Size(min = 6, message = "password must have at-least 6 characters")
