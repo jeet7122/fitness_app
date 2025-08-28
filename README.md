@@ -36,7 +36,7 @@ All services register themselves with Eureka, and **RabbitMQ** is used for async
      |   RabbitMQ  |              |
      | <---------->+--------------+
      |
-  [Authorization checks: ensure act
+  [Authorization checks: ensure activity is posted by a valid user]
 ```
 
 
@@ -154,4 +154,4 @@ This project is licensed under the MIT License.
 
 
 
-ivity is posted by a valid user]
+
