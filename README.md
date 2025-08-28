@@ -131,7 +131,7 @@ eureka.client.service-url.defaultZone – Eureka registry URL
 
 ✅ Setup of Eureka, User Service, Activity Service, AI Service
 
-✅ RabbitMQ integration for inter-service messaging
+✅ RabbitMQ integration for inter-service communication
 
 🔄 AI Service: Integrate Gemini with prompt configuration
 
